@@ -1,14 +1,20 @@
 anguage: node_js
+
 node_js: stable
+
 cache:
   directories:
   - node_modules
 before_install:
+
   - npm install -g hexo-cli
+
 install:
   - npm install
+
 script:
   - hexo g 
+
 after_script:
   - cd ./public
   - git init
@@ -18,10 +24,7 @@ after_script:
   - git commit -m "TravisCI 自动部署"
   # Github Pages
   - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master 
+  
 env:
   global:
     - GH_REF: github.com:2662419405/2662419405.github.io.git
-
-branches:
-  only:
-    - hexo
