@@ -27,4 +27,4 @@ after_script:
 
 env:
   global:
-    - GH_REF: github.com:2662419405/2662419405.github.io.git
+    - GH_REF: github.com/2662419405/2662419405.github.io.git
