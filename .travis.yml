@@ -23,8 +23,8 @@ after_script:
   - git add .
   - git commit -m "TravisCI 自动部署"
   # Github Pages
-  - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master 
-  
+  - git push --force --quiet "https://${shblog}@${GH_REF}" master:master 
+
 env:
   global:
     - GH_REF: github.com:2662419405/2662419405.github.io.git
