@@ -9,18 +9,17 @@ install:
   - npm install
 script:
   - hexo g
-  - hexo d
-# after_script:
-#   - cd ./public
-#   - git config user.name "sh"
-#   - git config user.email "2662419405@qq.com"
-#   - git add .
-#   - git commit -m "TravisCI 自动部署"
-#   # Github Pages
-#   - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
-# env:
-#   global:
-#     - GH_REF: github.com/2662419405/2662419405.github.io.git
+after_success:
+  - cd ./public
+  - git config user.name "sh"
+  - git config user.email "2662419405@qq.com"
+  - git add .
+  - git commit -m "TravisCI 自动部署"
+  # Github Pages
+  - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
+env:
+  global:
+    - GH_REF: github.com/2662419405/2662419405.github.io.git
 notifications:
   email:
     - 2662419405@qq.com
