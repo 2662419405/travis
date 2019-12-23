@@ -99,7 +99,7 @@ avatar: https://cdn.jsdelivr.net/gh/2662419405/CDN@1.0/sh.jpg
 
 # live2d模板加载
 live2d:
-	enable: true
+	enable: false
 	scriptFrom: local
 	model: 
 		use: live2d-widget-model-haruto #模型选择

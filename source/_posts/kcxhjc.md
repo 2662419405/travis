@@ -105,6 +105,8 @@ Travics.com 只针对private项目，提供更多一些额外功能，如cache�
 
 <fancybox>
 <img src="https://cdn.jsdelivr.net/gh/2662419405/imgPlus/Snipaste_2019-12-20_10-40-57.png" />
+</fancybox>
+<fancybox>
 <img src="https://cdn.jsdelivr.net/gh/2662419405/imgPlus/Snipaste_2019-12-20_10-41-53.png" />
 </fancybox>
 

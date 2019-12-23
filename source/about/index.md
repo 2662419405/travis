@@ -1,10 +1,16 @@
 ---
-layout: page
+layout: pages
 title: 关于我
 date: 2019-11-19 10:43:46
 body: [article, grid, comments]
+music:
+  enable: true      # true（文章内和文章列表都显示） internal（只在文章内显示）
+  server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+  type: song        # song （单曲） album （专辑） playlist （歌单） search （搜索）
+  id: 1406648891      # 歌曲/专辑/歌单 ID
+  autoplay: true    # 自动播放
 valine:
-  placeholder: 有什么想对我说的呢？
+  placeholder: 博主这么菜,不如吐槽一波
 ---
 
 #### 前端路上的一个小学生,喜欢钻研技术,也渴望和大佬之间的学习和交流(欢迎骚扰)
